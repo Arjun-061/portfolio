@@ -14,7 +14,7 @@ export default function Experience() {
       location: "Remote / Onsite",
       accent: "from-[#23395d] to-[#0f172a]",
       badgeColor: "bg-[#23395d]/15 border-[#23395d]/40 text-[#23395d]",
-      skills: ["Python", "Data Preprocessing", "Predictive Analytics", "Algorithms"],
+      skills: ["Data Preprocessing", "Predictive Analytics", "Algorithms"],
       bullets: [
         "Applied foundational computer science algorithms and data processing techniques.",
         "Gained hands-on practical experience in data cleaning, feature engineering, and analytics pipelines.",

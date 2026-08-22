@@ -7,24 +7,22 @@ export default function Skills() {
 
   const skillCategories = [
     {
-      title: "AI & Productivity Tools",
-      icon: Cpu,
-      accent: accentStyle,
-      skills: [
-        { name: "ChatGPT & Prompt Engineering", tag: "AI Assistance" },
-        { name: "GitHub / Version Control", tag: "Collaboration" },
-        { name: "VS Code & Development IDEs", tag: "Productivity" },
-      ]
-    },
-    {
       title: "Technical & Core Languages",
       icon: Code2,
       accent: accentStyle,
       skills: [
-        { name: "Python", tag: "Primary Language" },
-        { name: "Java & JDBC", tag: "OOP & Systems" },
-        { name: "SQL & Relational DBs", tag: "Database" },
-        { name: "C / C++", tag: "Core Concepts" },
+        { name: "Java" },
+        { name: "SQL & Relational DBs" },
+        { name: "C++" },
+      ]
+    },
+    {
+      title: "AI & Productivity Tools",
+      icon: Cpu,
+      accent: accentStyle,
+      skills: [
+        { name: "ChatGPT & Prompt Engineering" },
+        { name: "VS Code & Development IDEs" },
       ]
     },
     {
@@ -32,9 +30,9 @@ export default function Skills() {
       icon: Cloud,
       accent: accentStyle,
       skills: [
-        { name: "AWS Cloud Fundamentals", tag: "Certified" },
-        { name: "Linux Systems", tag: "OS Environment" },
-        { name: "Kali Linux Exposure", tag: "Security Basics" },
+        { name: "AWS Cloud Fundamentals" },
+        { name: "Linux Systems" },
+        { name: "Kali Linux Exposure" },
       ]
     },
     {
@@ -42,10 +40,10 @@ export default function Skills() {
       icon: Users,
       accent: accentStyle,
       skills: [
-        { name: "Time Management", tag: "Efficiency" },
-        { name: "Team Collaboration & Leadership", tag: "Group Projects" },
-        { name: "Quick Learner & Adaptable", tag: "Growth Mindset" },
-        { name: "Problem Solving", tag: "Analytical" },
+        { name: "Time Management" },
+        { name: "Team Collaboration & Leadership" },
+        { name: "Quick Learner & Adaptable" },
+        { name: "Problem Solving" },
       ]
     }
   ];
@@ -98,15 +96,12 @@ function SkillCard({ category, Icon }) {
         {category.skills.map((skill, sIdx) => (
           <li
             key={sIdx}
-            className="flex items-center justify-between p-3.5 rounded-xl bg-white border border-slate-300 hover:border-[#23395d] hover:bg-white transition-all shadow-sm"
+            className="flex items-center p-3.5 rounded-xl bg-white border border-slate-300 hover:border-[#23395d] hover:bg-white transition-all shadow-sm"
           >
             <div className="flex items-center gap-3">
               <CheckCircle2 className="w-4.5 h-4.5 text-[#23395d] shrink-0" />
               <span className="font-extrabold text-sm text-[#0f172a]">{skill.name}</span>
             </div>
-            <span className="font-mono text-slate-900 font-bold text-xs px-2.5 py-1 rounded-md bg-slate-100 border border-slate-300">
-              {skill.tag}
-            </span>
           </li>
         ))}
       </ul>

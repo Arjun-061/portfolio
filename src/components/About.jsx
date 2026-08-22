@@ -7,7 +7,7 @@ export default function About() {
     {
       icon: Code2,
       title: "Core Software Engineering",
-      desc: "Proficient in Python, Java, and C/C++ with strong foundation in Data Structures, OOP, and algorithm design.",
+      desc: "Proficient in Java and C/C++ with strong foundation in Data Structures, OOP, and algorithm design.",
       color: "text-[#23395d] border-[#23395d]/30 bg-[#23395d]/10",
     },
     {
@@ -94,7 +94,7 @@ export default function About() {
                     className="w-full h-full object-cover object-top"
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = "C:/Users/Arjun/.gemini/antigravity/brain/335c47c2-7e82-40ed-859b-1586358b8b44/.user_uploaded/media_1786117604130.jpg";
+                      e.target.src = "C:/Users/Arjun/.gemini/antigravity/brain/335c47c2-7e82-40ed-859b-1586358b8b44/.user_uploaded/media_1787412770497.jpg";
                     }}
                   />
                 </div>
@@ -120,7 +120,7 @@ export default function About() {
               </div>
 
               <p className="text-slate-900 text-sm font-medium leading-relaxed">
-                Proficient in Python, Java, SQL, and AWS cloud fundamentals. Passionate about building robust backend logic, responsive web user interfaces, and structured database systems.
+                Proficient in Java, SQL, and AWS cloud fundamentals. Passionate about building robust backend logic, responsive web user interfaces, and structured database systems.
               </p>
             </div>
 

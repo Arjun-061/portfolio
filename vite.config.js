@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react'
 import fs from 'fs'
 import path from 'path'
 
-// Copy user uploaded profile picture & certificates into public directory
-const srcPhoto = "C:\\Users\\Arjun\\.gemini\\antigravity\\brain\\335c47c2-7e82-40ed-859b-1586358b8b44\\.user_uploaded\\media_1786117604130.jpg";
+// Copy user uploaded profile picture, certificates & resume into public directory
+const srcPhoto = "C:\\Users\\Arjun\\.gemini\\antigravity\\brain\\335c47c2-7e82-40ed-859b-1586358b8b44\\.user_uploaded\\media_1787412770497.jpg";
 const srcAwsCert = "C:\\Users\\Arjun\\.gemini\\antigravity\\brain\\335c47c2-7e82-40ed-859b-1586358b8b44\\.user_uploaded\\media_1786163801278.pdf";
 const srcGenAiCert = "C:\\Users\\Arjun\\.gemini\\antigravity\\brain\\335c47c2-7e82-40ed-859b-1586358b8b44\\.user_uploaded\\media_1786166288173.png";
+const srcResume = "C:\\Users\\Arjun\\.gemini\\antigravity\\brain\\335c47c2-7e82-40ed-859b-1586358b8b44\\.user_uploaded\\media_1787414826508.pdf";
 
 const publicDir = path.resolve(__dirname, 'public');
 
@@ -16,7 +17,7 @@ try {
   }
   if (fs.existsSync(srcPhoto)) {
     fs.copyFileSync(srcPhoto, path.resolve(publicDir, 'arjun-profile.jpg'));
-    console.log('Synced arjun-profile.jpg');
+    console.log('Synced latest arjun-profile.jpg');
   }
   if (fs.existsSync(srcAwsCert)) {
     fs.copyFileSync(srcAwsCert, path.resolve(publicDir, 'aws-certificate.pdf'));
@@ -25,6 +26,10 @@ try {
   if (fs.existsSync(srcGenAiCert)) {
     fs.copyFileSync(srcGenAiCert, path.resolve(publicDir, 'genai-certificate.png'));
     console.log('Synced genai-certificate.png');
+  }
+  if (fs.existsSync(srcResume)) {
+    fs.copyFileSync(srcResume, path.resolve(publicDir, 'arjun-resume.pdf'));
+    console.log('Synced arjun-resume.pdf');
   }
 } catch (e) {
   console.error('File sync error:', e);

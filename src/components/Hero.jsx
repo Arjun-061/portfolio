@@ -137,13 +137,13 @@ export default function Hero({ onOpenResume }) {
             
             {/* Status Pill */}
             <div
-              className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#23395d]/15 border border-[#23395d]/40 backdrop-blur-md transition-all duration-700 ease-out ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+              className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/40 backdrop-blur-xl border border-white/60 shadow-lg shadow-[#23395d]/10 transition-all duration-700 ease-out ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
             >
               <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#23395d] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#23395d]"></span>
               </span>
-              <span className="text-xs font-mono text-[#23395d] tracking-wide font-extrabold">
+              <span className="text-xs font-sans text-[#23395d] tracking-wider font-extrabold uppercase">
                 Open for Software Engineering Roles
               </span>
             </div>
@@ -166,7 +166,7 @@ export default function Hero({ onOpenResume }) {
               className={`text-base sm:text-lg text-slate-900 font-medium leading-relaxed max-w-2xl transition-all duration-700 ease-out ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
               style={{ transitionDelay: '200ms' }}
             >
-              Computer Science undergraduate at V.S.B. College of Engineering Technical Campus with hands-on software development experience from internships at <strong className="text-[#23395d] font-black">Codec Technologies</strong> and <strong className="text-[#23395d] font-black">TailsMart</strong>. Proficient in Python, Java, SQL, AWS, and modern web application development.
+              Computer Science undergraduate at V.S.B. College of Engineering Technical Campus with hands-on software development experience from internships at <strong className="text-[#23395d] font-black">Codec Technologies</strong> and <strong className="text-[#23395d] font-black">TailsMart</strong>. Proficient in Java, SQL, AWS, and modern web application development.
             </p>
 
             {/* Tech Badges (High Contrast) */}
@@ -174,7 +174,7 @@ export default function Hero({ onOpenResume }) {
               className={`flex flex-wrap items-center gap-2 pt-1 transition-all duration-700 ease-out ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
               style={{ transitionDelay: '300ms' }}
             >
-              {['Python', 'Java', 'SQL', 'AWS', 'Linux', 'Git'].map((tech) => (
+              {['Java', 'SQL', 'AWS', 'Linux'].map((tech) => (
                 <span
                   key={tech}
                   className="px-3 py-1 text-xs font-mono font-bold rounded-lg bg-white text-[#0f172a] border border-slate-300 hover:border-[#23395d] hover:text-[#23395d] hover:-translate-y-0.5 transition-all shadow-sm"
@@ -257,16 +257,16 @@ export default function Hero({ onOpenResume }) {
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = "C:/Users/Arjun/.gemini/antigravity/brain/335c47c2-7e82-40ed-859b-1586358b8b44/.user_uploaded/media_1786117604130.jpg";
+                      e.target.src = "C:/Users/Arjun/.gemini/antigravity/brain/335c47c2-7e82-40ed-859b-1586358b8b44/.user_uploaded/media_1787412770497.jpg";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/70 via-transparent to-transparent opacity-80" />
                   
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs font-mono">
-                    <span className="font-bold tracking-wider uppercase bg-[#23395d]/90 backdrop-blur-md px-3 py-1 rounded-lg border border-white/30 shadow-sm flex items-center gap-1.5">
-                      <Sparkles className="w-3 h-3 text-sky-300" /> Arjun Krishnaa V
+                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+                    <span className="font-sans font-extrabold tracking-widest uppercase bg-white/20 backdrop-blur-xl px-3.5 py-1.5 rounded-xl border border-white/40 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] drop-shadow-md flex items-center gap-2 text-white text-xs">
+                      <Sparkles className="w-3.5 h-3.5 text-sky-300 drop-shadow animate-pulse" /> Arjun Krishnaa V
                     </span>
-                    <span className="bg-emerald-600 text-white font-black px-2.5 py-0.5 rounded-full flex items-center gap-1 text-[11px] shadow-sm">
+                    <span className="bg-emerald-500/80 backdrop-blur-xl border border-emerald-300/50 text-white font-sans font-extrabold px-3 py-1 rounded-xl flex items-center gap-1.5 text-[11px] shadow-md">
                       <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" /> Active
                     </span>
                   </div>
@@ -279,7 +279,7 @@ export default function Hero({ onOpenResume }) {
                     <span className="text-[10px] text-slate-900 font-mono font-bold block leading-tight">Internships</span>
                   </div>
                   <div className="p-2.5 rounded-xl bg-white border border-slate-300 text-center shadow-sm">
-                    <span className="text-base font-black text-[#23395d] font-mono block">2+</span>
+                    <span className="text-base font-black text-[#23395d] font-mono block">2</span>
                     <span className="text-[10px] text-slate-900 font-mono font-bold block leading-tight">Projects</span>
                   </div>
                   <div className="p-2.5 rounded-xl bg-white border border-slate-300 text-center shadow-sm">
